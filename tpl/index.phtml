@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <title>Image Similarity</title>
+
+    <style type="text/css">
+      body {
+        font-family: verdana;
+      }
+
+      table {
+        width: 90%;
+        margin: 0px auto;
+        text-align: center;
+        border-collapse: collapse;
+      }
+
+      th {
+        padding: 50px;
+        font-size: 24px;
+      }
+
+      td {
+        vertical-align: top;
+        padding: 30px;
+        border: 1px solid black;
+      }
+
+      td:nth-child(2) {
+        width: 512px;
+      }
+
+      img {
+        max-width: 480px;
+        max-height: 480px;
+      }
+
+      td:nth-child(2) img {
+        max-width: 140px;
+        max-height: 140px;
+      }
+
+      td:nth-child(2) img:hover {
+        max-width: none;
+        max-height: none;
+        width: 480px;
+      }
+    </style>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha256-3edrmyuQ0w65f8gfBsqowzjJe2iM6n0nKciPUp8y+7E="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <table>
+      <tbody>
+        <thead>
+          <tr>
+            <th>Image search corpus</th>
+            <th>Match candidate</th>
+          </tr>
+        </thead>
+        <tbody>
+          % for result in results:
+            <tr>
+              <td>
+                % for path in result['paths']:
+                  <img src="{{path}}" /><br />
+                  {{path}}<br />
+                % end
+              </td>
+              <td>
+                % for candidate in result['candidates']:
+                  % for file in candidate['files']:
+                    <img src="{{file}}" /><br />
+                    {{file}}<br />
+                  % end
+                  <strong>Distance {{candidate['distance']}}</strong>
+                  <hr />
+                % end
+              </td>
+            </tr>
+          % end
+        </tbody>
+      </tbody>
+    </table>
+  </body>
+</html>

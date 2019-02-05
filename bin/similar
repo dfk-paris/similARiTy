@@ -1,0 +1,11 @@
+#!/usr/bin/env python3
+
+import sys
+sys.path.append('.')
+
+import command_line
+import similar
+
+config = command_line.Cmd().run()
+similar = similar.App()
+similar.run(config)
