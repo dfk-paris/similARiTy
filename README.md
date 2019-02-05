@@ -4,9 +4,9 @@ python >= 3.2
 
 # Installation
 
- git clone https://github.com/dfk-paris/similar
- cd similar
- pip install -r requirements.txt
+    git clone https://github.com/dfk-paris/similar
+    cd similar
+    pip install -r requirements.txt
 
 # Usage
 
