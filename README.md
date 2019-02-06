@@ -18,12 +18,11 @@ json file. Do this for two directories and then compare the json files, e.g.:
     bin/similar index /path/to/other_set other.json
     bin/similar compare base.json other.json out.html
 
-The command ships with a cmd help, please run
+To list available sub commands, please run
 
     bin/similar --help
 
-to see all available sub commands and then show more specific help for each
-sub command with e.g.
+and then show more specific help for each sub command with e.g.
 
     bin/similar index --help
 
