@@ -1,6 +1,7 @@
 # Requirements
 
 python >= 3.2
+ImageMagick >= 7
 
 # Installation
 
