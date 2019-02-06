@@ -28,10 +28,10 @@ and then show more specific help for each sub command with e.g.
 
 # Hints
 
-* Indexing is a lot faster if input images are small. A bounding box of 80x80 is
-  a good choice since it still allows to recognize the images in the html
-  output.
+* Indexing is a lot faster if input images are small. A bounding box of 80x80
+  pixel is a good choice since it still allows to recognize the images in the
+  html output.
 * The default is the dhash with max distance 15. If you switch to phash, make
   sure to also reduce the distance, since the phash is only half the size of
-  the dhash (64 bit vs 128 bit)
-* phash is faster to compare since it is shorter than dhash
+  the dhash (64 bit vs 128 bit).
+* phash is faster to compare since it is shorter than dhash.
