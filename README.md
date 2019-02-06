@@ -5,7 +5,7 @@ ImageMagick >= 7
 
 # Installation
 
-    git clone https://github.com/dfk-paris/similar
+    git clone https://github.com/dfk-paris/similARiTy
     cd similar
     pip install -r requirements.txt
 
