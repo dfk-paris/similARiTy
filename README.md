@@ -11,7 +11,7 @@
 
 # Usage
 
-Basically, you first create an "index" for a given directory. This creates a
+Basically, you first create an “index” for a given directory. This creates a
 json file. Do this for two directories and then compare the json files, e.g.:
 
     bin/similar index /path/to/base_set base.json
